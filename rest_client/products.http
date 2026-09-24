@@ -1,0 +1,29 @@
+GET http://localhost:5000/api/products?minPrice=8&maxPrice=500
+
+### 
+GET http://localhost:5000/api/products/6
+
+###
+POST http://localhost:5000/api/products
+Content-Type:  application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwidXNlclR5cGUiOiJub3JtYWwtdXNlciIsImlhdCI6MTc4OTUxODc5MywiZXhwIjoxNzg5NjA1MTkzfQ.CxH9011_CrFbW7DdQnylwjtnvMrZS-qidm5N8c9beYU
+
+{
+    "title": "book one",
+    "description": "about this book",
+    "price": 700
+}
+
+###
+PUT  http://localhost:5000/api/products/3
+Content-Type:  application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwidXNlclR5cGUiOiJhZG1pbiIsImlhdCI6MTc4OTU2MjIwMCwiZXhwIjoxNzg5NjQ4NjAwfQ.heGyOmUGozAlZwDqKjD_ZqBkWGyaYehWBX6kGwePkt8
+
+{
+    "title": "pen updated"
+    
+}
+
+###
+DELETE  http://localhost:5000/api/products/3
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwidXNlclR5cGUiOiJhZG1pbiIsImlhdCI6MTc4OTU2MjIwMCwiZXhwIjoxNzg5NjQ4NjAwfQ.heGyOmUGozAlZwDqKjD_ZqBkWGyaYehWBX6kGwePkt8

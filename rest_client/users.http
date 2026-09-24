@@ -1,0 +1,39 @@
+POST  http://localhost:5000/api/users/auth/register
+Content-Type:  application/json
+
+{
+    "email": "biba@gmail.com",
+    "password": "1234556789"
+}
+
+### 
+POST  http://localhost:5000/api/users/auth/login
+Content-Type:  application/json
+
+{
+    "email": "biba@gmail.com",
+    "password": "1234556789"
+}
+
+###
+GET  http://localhost:5000/api/users/current-user
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwidXNlclR5cGUiOiJub3JtYWwtdXNlciIsImlhdCI6MTc4OTM0MDIwMCwiZXhwIjoxNzg5NDI2NjAwfQ.av9R0T_hBWr-YxtsfxLQ_ZCZy-7ZP6IvqgarUwYjFOY
+
+###
+PUT  http://localhost:5000/api/users
+Content-Type:  application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwidXNlclR5cGUiOiJub3JtYWwtdXNlciIsImlhdCI6MTc4OTMzMTQyMiwiZXhwIjoxNzg5NDE3ODIyfQ.lj7TYx1IbAWnVuTJvbSI-dfXZ_ZZqNp3DSO9PMtiID8
+
+{
+    "username": "yahia 123",
+    "password": "0987654"
+}
+
+
+###
+GET   http://localhost:5000/api/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlclR5cGUiOiJhZG1pbiIsImlhdCI6MTc4OTMyNzA1NSwiZXhwIjoxNzg5NDEzNDU1fQ.wf2d4_w5-DOO9eTz3eG1d5ObJ3iM8lfwzewHtslstM8
+
+###
+DELETE    http://localhost:5000/api/users/3
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywidXNlclR5cGUiOiJub3JtYWwtdXNlciIsImlhdCI6MTc4OTMzMjc1NSwiZXhwIjoxNzg5NDE5MTU1fQ.buPPb7Vd8gCYiWXMbCzh29bIsTPLOqPd9v3eGYcrHLE
